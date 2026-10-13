@@ -16,5 +16,14 @@ const PONTOS = [
     nota: 4.6,
     horario: "De segunda a sábado, das 6h às 20h. Domingo, das 6h às 18h.",
     descricao: "O Parque da Cidade é um equipamento urbano que reúne estruturas voltadas à prática esportiva, atividades culturais e ao lazer. Com 85 mil metros quadrados, o parque tem entrada pela avenida Jardelina de Almeida Lopes, em frente a praça Deputado Paulo Kobayashi (Praça do Oito), no Parque Santana."
+  },
+   {
+    nome: "Parque das Neblinas",
+    categoria: "Parque",
+    bairro: "Taiaçupeba",
+    gratuito: false,
+    nota: 4.8,
+    horario: "Precisa de agendamento",
+    descricao: "O Parque das Neblinas é um reserva privada administrada pelo Instituto Ecofuturo, localizada no limite dos municípios de Mogi das Cruzes e Bertioga. É reconhecida desde 2006 como Posto Avançado da Reserva da Biosfera do Cinturão Verde da Cidade São Paulo. "
   }
 ]
