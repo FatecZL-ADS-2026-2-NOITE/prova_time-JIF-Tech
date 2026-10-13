@@ -5,3 +5,22 @@ const contador = document.querySelector("#contador");
 const lista = document.querySelector("#lista-pontos");
 const mensagemVazia = document.querySelector("#mensagem-vazio");
 const detalhe = document.querySelector("#detalhe");
+
+function somenteGratuitosLigado() {
+  return botaoGratuitos.classList.contains("ativo");
+}
+
+function filtrarPontos() {
+  const texto = campoBusca.value.toLowerCase().trim();
+  const categoria = filtroCategoria.value;
+  const soGratuitos = somenteGratuitosLigado();
+
+  return PONTOS.filter(function (ponto) {
+    const passaNaBusca = ponto.nome.toLowerCase().includes(texto);
+    const passaNaCategoria =
+      categoria === "Todas" || categoria === "" || ponto.categoria === categoria;
+    const passaNoGratuito = !soGratuitos || ponto.gratuito;
+
+    return passaNaBusca && passaNaCategoria && passaNoGratuito;
+  });
+}
