@@ -25,5 +25,14 @@ const PONTOS = [
     nota: 4.8,
     horario: "Precisa de agendamento",
     descricao: "O Parque das Neblinas é um reserva privada administrada pelo Instituto Ecofuturo, localizada no limite dos municípios de Mogi das Cruzes e Bertioga. É reconhecida desde 2006 como Posto Avançado da Reserva da Biosfera do Cinturão Verde da Cidade São Paulo. "
+  },
+  {
+    nome: "Pico do Urubu",
+    categoria: "Mirante",
+    bairro: "Serra do Itapety",
+    gratuito: true,
+    nota: 4.7,
+    horario: "24 horas",
+    descricao: "Com uma vista privilegiada de 360º da cidade e uma altitude de 1.160m acima do nível do mar, quem gosta de se sentir nas nuvens encontra no Pico do Urubu a estrutura necessária para observar a cidade ou voar de paraglider ou asa delta. O voo livre vem colorindo os céus de Mogi das Cruzes há quase 30 anos."
   }
 ]
