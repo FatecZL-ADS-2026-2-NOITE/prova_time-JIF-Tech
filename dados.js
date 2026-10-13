@@ -61,5 +61,14 @@ const PONTOS = [
     nota: 4.6,
     horario: "Terça a sexta-feira, das 9h às 17h Sábados, das 9h às 13h",
     descricao: "A Pinacoteca tem 10 espaços expositivos internos e 1 espaço externo. O acervo é composto por 50 obras pertencentes à Prefeitura, as quais foram reunidas ao longo dos anos. Em exposição, são 161 obras de 128 artistas, selecionadas especificamente para o equipamento. Há, ainda, 80 obras na Reserva Técnica."
+  },
+  {
+    nome: "Casarão do Chá",
+    categoria: "Museu",
+    bairro: "Cocuera",
+    gratuito: true,
+    nota: 4.6,
+    horario: "Domingo, 09h às 17h",
+    descricao: "O Casarão do Chá foi construído pelo mestre-carpinteiro japonês Kazuo Hanaoka, no ano de 1942, para ser uma fábrica de chá. A edificação do casarão se fez necessária graças à bem sucedida produção de chá naquela área, que já vinha desde a década de 20."
   }
-]
+];
