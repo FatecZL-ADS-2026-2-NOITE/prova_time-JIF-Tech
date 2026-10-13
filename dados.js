@@ -41,8 +41,8 @@ const PONTOS = [
     bairro: "Centro",
     gratuito: true,
     nota: 4.8,
-    horario: "Segunda a sexta das 8:30 às 18:30 e sábado das 8:30 às 13 horas",
-    descricao: "A Catedral de Santana, originária da antiga iIgreja Matriz e localizada na região central da cidade, é um dos principais símbolos de Mogi das Cruzes. Destinada à Padroeira Sant'Anna, foi construída em 1902 o mesmo local onde foi erguida a primeira capela do povoamento. Em 1952 foi idealizada uma nova igreja matriz pelo Monsenhor Roque Pinto de Barros, Vigário da Paróquia."
+    horario: "Segunda a sexta das 8h30 às 18h30 e sábado das 8h30 às 13 horas",
+    descricao: "A Catedral de Santana, originária da antiga Igreja Matriz e localizada na região central da cidade, é um dos principais símbolos de Mogi das Cruzes. Destinada à Padroeira Sant'Anna, foi construída em 1902 o mesmo local onde foi erguida a primeira capela do povoamento. Em 1952 foi idealizada uma nova igreja matriz pelo Monsenhor Roque Pinto de Barros, Vigário da Paróquia."
   },
   {
     nome: "Casarão do Carmo",
@@ -59,7 +59,7 @@ const PONTOS = [
     bairro: "Centro",
     gratuito: true,
     nota: 4.6,
-    horario: "Terça a sexta-feira, das 9h às 17h Sábados, das 9h às 13h",
+    horario: "Terça a sexta-feira, das 9h às 17h. Sábados, das 9h às 13h",
     descricao: "A Pinacoteca tem 10 espaços expositivos internos e 1 espaço externo. O acervo é composto por 50 obras pertencentes à Prefeitura, as quais foram reunidas ao longo dos anos. Em exposição, são 161 obras de 128 artistas, selecionadas especificamente para o equipamento. Há, ainda, 80 obras na Reserva Técnica."
   },
   {
