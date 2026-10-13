@@ -24,3 +24,18 @@ function filtrarPontos() {
     return passaNaBusca && passaNaCategoria && passaNoGratuito;
   });
 }
+function criarCartao(ponto) {
+  const cartao = document.createElement("article");
+  cartao.className = "cartao";
+  cartao.innerHTML =
+    "<h2>" + ponto.nome + "</h2>" +
+    "<p>" + ponto.categoria + " · " + ponto.bairro + "</p>" +
+    "<p>Nota: " + ponto.nota.toFixed(1) + "</p>" +
+    "<p>" + (ponto.gratuito ? "Gratuito" : "Pago") + "</p>";
+
+  cartao.addEventListener("click", function () {
+    mostrarDetalhe(ponto);
+  });
+
+  return cartao;
+}
