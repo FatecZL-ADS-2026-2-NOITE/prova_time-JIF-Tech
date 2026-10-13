@@ -39,3 +39,28 @@ function criarCartao(ponto) {
 
   return cartao;
 }
+
+function mostrarDetalhe(ponto) {
+  detalhe.innerHTML =
+    "<h2>" + ponto.nome + "</h2>" +
+    "<p><strong>Categoria:</strong> " + ponto.categoria + "</p>" +
+    "<p><strong>Bairro:</strong> " + ponto.bairro + "</p>" +
+    "<p><strong>Entrada:</strong> " + (ponto.gratuito ? "Gratuita" : "Paga") + "</p>" +
+    "<p><strong>Nota:</strong> " + ponto.nota.toFixed(1) + "</p>" +
+    "<p><strong>Horário:</strong> " + ponto.horario + "</p>" +
+    "<p>" + ponto.descricao + "</p>" +
+    "<button id=\"btn-voltar\" type=\"button\">Voltar para a lista</button>";
+
+  document.querySelector("#btn-voltar").addEventListener("click", fecharDetalhe);
+
+  detalhe.hidden = false;
+  lista.hidden = true;
+  contador.hidden = true;
+  mensagemVazia.hidden = true;
+}
+
+function fecharDetalhe() {
+  detalhe.hidden = true;
+  lista.hidden = false;
+  contador.hidden = false;
+}
