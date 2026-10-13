@@ -49,3 +49,4 @@ Premissas e restrições: HTML, CSS e JavaScript puro, sem servidor, banco de da
   • Data da entrevista: 09 / 10 / 2026
   • Entrevistada: Priscila no papel de representante da Secretaria Municipal de Turismo de Mogi das Cruzes (entrevista simulada)
   • Entrevistador(a): Isabella Tiemi Sasaki Nakadomari 
+  • Confirmação do entendimento: confirmado pela entrevistada em 09/10/2026.
