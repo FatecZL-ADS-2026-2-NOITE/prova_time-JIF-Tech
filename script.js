@@ -64,3 +64,19 @@ function fecharDetalhe() {
   lista.hidden = false;
   contador.hidden = false;
 }
+
+function atualizarTela() {
+  fecharDetalhe();
+
+  const pontos = filtrarPontos();
+
+  lista.innerHTML = "";
+  pontos.forEach(function (ponto) {
+    lista.appendChild(criarCartao(ponto));
+  });
+
+  contador.textContent =
+    pontos.length + (pontos.length === 1 ? " ponto encontrado" : " pontos encontrados");
+
+  mensagemVazia.hidden = pontos.length !== 0;
+}
