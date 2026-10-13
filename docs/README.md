@@ -56,7 +56,7 @@ docs/
 | Integrante | O que fez |
 |---|---|
 | João Vitor Vieira | **HTML:** escreveu o `index.html` com as tags semânticas (header, main, section, article, footer), os campos de busca e filtro com label e as áreas de contador, mensagem de vazio, detalhe e lista. |
-| [Felipe França | **CSS:** escreveu o `style.css` com a paleta de cores, a tipografia, os cartões, o cabeçalho e o rodapé, o layout em Grid e Flexbox e o comportamento em tela pequena (400px). |
+| Felipe França | **CSS:** escreveu o `style.css` com a paleta de cores, a tipografia, os cartões, o cabeçalho e o rodapé, o layout em Grid e Flexbox e o comportamento em tela pequena (400px). |
 | Henrique Moura | **JavaScript:** escreveu o `script.js`  |
 | Isabella Tiemi | **Documentação, JavaScript e dados:** fez a entrevista e escreveu o documento de requisitos e a lista de entidades e atributos (pasta `docs`), montou o array de 8 pontos turísticos no `dados.js`, mexeu no JavaScript com a renderização dos cartões a partir do array, a busca, o filtro de categoria, o botão "Somente gratuitos", o contador, o estado vazio e o detalhe do ponto. e escreveu este README. |
 
