@@ -34,5 +34,14 @@ const PONTOS = [
     nota: 4.7,
     horario: "24 horas",
     descricao: "Com uma vista privilegiada de 360º da cidade e uma altitude de 1.160m acima do nível do mar, quem gosta de se sentir nas nuvens encontra no Pico do Urubu a estrutura necessária para observar a cidade ou voar de paraglider ou asa delta. O voo livre vem colorindo os céus de Mogi das Cruzes há quase 30 anos."
+  },
+  {
+    nome: "Catedral de Santana",
+    categoria: "Igreja",
+    bairro: "Centro",
+    gratuito: true,
+    nota: 4.8,
+    horario: "Segunda a sexta das 8:30 às 18:30 e sábado das 8:30 às 13 horas",
+    descricao: "A Catedral de Santana, originária da antiga iIgreja Matriz e localizada na região central da cidade, é um dos principais símbolos de Mogi das Cruzes. Destinada à Padroeira Sant'Anna, foi construída em 1902 o mesmo local onde foi erguida a primeira capela do povoamento. Em 1952 foi idealizada uma nova igreja matriz pelo Monsenhor Roque Pinto de Barros, Vigário da Paróquia."
   }
 ]
