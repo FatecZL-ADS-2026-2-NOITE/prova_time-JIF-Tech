@@ -43,5 +43,14 @@ const PONTOS = [
     nota: 4.8,
     horario: "Segunda a sexta das 8:30 às 18:30 e sábado das 8:30 às 13 horas",
     descricao: "A Catedral de Santana, originária da antiga iIgreja Matriz e localizada na região central da cidade, é um dos principais símbolos de Mogi das Cruzes. Destinada à Padroeira Sant'Anna, foi construída em 1902 o mesmo local onde foi erguida a primeira capela do povoamento. Em 1952 foi idealizada uma nova igreja matriz pelo Monsenhor Roque Pinto de Barros, Vigário da Paróquia."
+  },
+  {
+    nome: "Casarão do Carmo",
+    categoria: "Museu",
+    bairro: "Centro",
+    gratuito: true,
+    nota: 4.6,
+    horario: "De terça à sexta-feira, das 9h às 17h. Sábados, das 9h às 13h",
+    descricao: "O Casarão do Carmo é uma construção do século XIX, em estilo colonial, de taipa de pilão e taipa de mão, que foi concebido para servir de residência para a importante família Bourroul. A partir dos anos 30 passou a abrigar diversas atividades culturais e comerciais, até ser desapropriado e restaurado pela Prefeitura Municipal na década de 80. Desde então, vem sendo ocupado para atividades culturais. "
   }
 ]
