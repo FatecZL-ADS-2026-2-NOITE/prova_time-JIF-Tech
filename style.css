@@ -1,0 +1,206 @@
+:root {
+    --cor-primaria: #1b4332;
+    --cor-secundaria: #2d6a4f;
+    --cor-destaque: #d8f3dc;
+    --cor-fundo: #f8f9fa;
+    --cor-texto: #212529;
+    --cor-card-fundo: #ffffff;
+    --cor-borda: #dcdde1;
+    --cor-ativo: #40916c;
+    --fonte-principal: system-ui, -apple-system, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    flex: 1;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+    padding: 1.25rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+footer {
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    margin-top: auto;
+    font-size: 1rem;
+}
+
+footer p:first-child {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.35rem;
+    color: var(--cor-destaque);
+}
+
+section[aria-label="Busca e filtros"] {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+section[aria-label="Busca e filtros"] label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--cor-primaria);
+}
+
+input[type="search"],
+select {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid var(--cor-borda);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    background-color: #fff;
+    color: var(--cor-texto);
+}
+
+input[type="search"]:focus,
+select:focus {
+    outline: 2px solid var(--cor-secundaria);
+}
+
+#btn-gratuitos {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid var(--cor-borda);
+    border-radius: 6px;
+    background-color: #e9ecef;
+    color: #495057;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+#btn-gratuitos:hover {
+    background-color: #dee2e6;
+}
+
+#btn-gratuitos.ativo {
+    background-color: var(--cor-ativo);
+    color: #ffffff;
+    border-color: var(--cor-ativo);
+}
+
+#contador {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    margin-bottom: 0.75rem;
+}
+
+#msg-vazia {
+    background-color: #fff3cd;
+    color: #664d03;
+    padding: 0.85rem;
+    border-radius: 6px;
+    border: 1px solid #ffe69c;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#detalhe {
+    background-color: #ffffff;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+#lista {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+}
+
+#lista > div, 
+.card {
+    background-color: var(--cor-card-fundo);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    padding: 0.75rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-break: break-word;
+}
+
+#lista > div:hover, 
+.card:hover {
+    border-color: var(--cor-secundaria);
+}
+
+#lista > div.selecionado, 
+.card.selecionado {
+    background-color: var(--cor-destaque);
+    border: 2px solid var(--cor-primaria);
+}
+
+@media (min-width: 600px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    section[aria-label="Busca e filtros"] {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    section[aria-label="Busca e filtros"] > div {
+        flex: 1;
+    }
+
+    #btn-gratuitos {
+        width: auto;
+        padding: 0.6rem 1.2rem;
+    }
+
+    #lista {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 1rem;
+    }
+}
