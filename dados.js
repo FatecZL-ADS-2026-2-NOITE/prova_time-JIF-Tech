@@ -52,5 +52,14 @@ const PONTOS = [
     nota: 4.6,
     horario: "De terça à sexta-feira, das 9h às 17h. Sábados, das 9h às 13h",
     descricao: "O Casarão do Carmo é uma construção do século XIX, em estilo colonial, de taipa de pilão e taipa de mão, que foi concebido para servir de residência para a importante família Bourroul. A partir dos anos 30 passou a abrigar diversas atividades culturais e comerciais, até ser desapropriado e restaurado pela Prefeitura Municipal na década de 80. Desde então, vem sendo ocupado para atividades culturais. "
+  },
+  {
+    nome: "Pinacoteca de Mogi das Cruzes",
+    categoria: "Museu",
+    bairro: "Centro",
+    gratuito: true,
+    nota: 4.6,
+    horario: "Terça a sexta-feira, das 9h às 17h Sábados, das 9h às 13h",
+    descricao: "A Pinacoteca tem 10 espaços expositivos internos e 1 espaço externo. O acervo é composto por 50 obras pertencentes à Prefeitura, as quais foram reunidas ao longo dos anos. Em exposição, são 161 obras de 128 artistas, selecionadas especificamente para o equipamento. Há, ainda, 80 obras na Reserva Técnica."
   }
 ]
