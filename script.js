@@ -80,3 +80,11 @@ function atualizarTela() {
 
   mensagemVazia.hidden = pontos.length !== 0;
 }
+campoBusca.addEventListener("input", atualizarTela);
+filtroCategoria.addEventListener("change", atualizarTela);
+botaoGratuitos.addEventListener("click", function () {
+  botaoGratuitos.classList.toggle("ativo");
+  botaoGratuitos.setAttribute("aria-pressed", somenteGratuitosLigado());
+  atualizarTela();
+});
+atualizarTela();
