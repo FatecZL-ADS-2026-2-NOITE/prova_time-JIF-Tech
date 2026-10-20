@@ -5,8 +5,9 @@ const PONTOS = [
     bairro: "César de Souza",
     gratuito: true,
     nota: 4.7,
-    horario: "07h às 18h",
-    descricao: "Com 215 mil metros de área, o parque conta com quatro lagos e um museu que retrata a história dos imigrantes japoneses, com vários objetos dos imigrantes doados ao museu. O parque está inserido na Área de Proteção Ambiental da Várzea do Rio Tietê. "
+    horario: "Aberto todos os dias, das 07h às 18h",
+    imagem: "imagens/Parque_Centenário_da_Imigração_Japonesa.png",
+    descricao: "Com 215 mil metros de área, o parque conta com quatro lagos e um museu que retrata a história dos imigrantes japoneses, com vários objetos dos imigrantes doados ao museu. O parque está inserido na Área de Proteção Ambiental da Várzea do Rio Tietê."
   },
   {
     nome: "Parque da Cidade",
@@ -15,16 +16,18 @@ const PONTOS = [
     gratuito: true,
     nota: 4.6,
     horario: "De segunda a sábado, das 6h às 20h. Domingo, das 6h às 18h.",
+    imagem: "imagens/Parque_da_Cidade.png",
     descricao: "O Parque da Cidade é um equipamento urbano que reúne estruturas voltadas à prática esportiva, atividades culturais e ao lazer. Com 85 mil metros quadrados, o parque tem entrada pela avenida Jardelina de Almeida Lopes, em frente a praça Deputado Paulo Kobayashi (Praça do Oito), no Parque Santana."
   },
-   {
+  {
     nome: "Parque das Neblinas",
     categoria: "Parque",
     bairro: "Taiaçupeba",
     gratuito: false,
     nota: 4.8,
     horario: "Precisa de agendamento",
-    descricao: "O Parque das Neblinas é um reserva privada administrada pelo Instituto Ecofuturo, localizada no limite dos municípios de Mogi das Cruzes e Bertioga. É reconhecida desde 2006 como Posto Avançado da Reserva da Biosfera do Cinturão Verde da Cidade São Paulo. "
+    imagem: "imagens/Parque_das_Neblinas.png",
+    descricao: "O Parque das Neblinas é um reserva privada administrada pelo Instituto Ecofuturo, localizada no limite dos municípios de Mogi das Cruzes e Bertioga. É reconhecida desde 2006 como Posto Avançado da Reserva da Biosfera do Cinturão Verde da Cidade São Paulo."
   },
   {
     nome: "Pico do Urubu",
@@ -32,7 +35,8 @@ const PONTOS = [
     bairro: "Serra do Itapety",
     gratuito: true,
     nota: 4.7,
-    horario: "24 horas",
+    horario: "Aberto todos os dias, 24 horas",
+    imagem: "imagens/Pico_do_Urubu.png",
     descricao: "Com uma vista privilegiada de 360º da cidade e uma altitude de 1.160m acima do nível do mar, quem gosta de se sentir nas nuvens encontra no Pico do Urubu a estrutura necessária para observar a cidade ou voar de paraglider ou asa delta. O voo livre vem colorindo os céus de Mogi das Cruzes há quase 30 anos."
   },
   {
@@ -42,6 +46,7 @@ const PONTOS = [
     gratuito: true,
     nota: 4.8,
     horario: "Segunda a sexta das 8h30 às 18h30 e sábado das 8h30 às 13 horas",
+    imagem: "imagens/Catedral_de_Santana.png",
     descricao: "A Catedral de Santana, originária da antiga Igreja Matriz e localizada na região central da cidade, é um dos principais símbolos de Mogi das Cruzes. Destinada à Padroeira Sant'Anna, foi construída em 1902 o mesmo local onde foi erguida a primeira capela do povoamento. Em 1952 foi idealizada uma nova igreja matriz pelo Monsenhor Roque Pinto de Barros, Vigário da Paróquia."
   },
   {
@@ -51,7 +56,8 @@ const PONTOS = [
     gratuito: true,
     nota: 4.6,
     horario: "De terça à sexta-feira, das 9h às 17h. Sábados, das 9h às 13h",
-    descricao: "O Casarão do Carmo é uma construção do século XIX, em estilo colonial, de taipa de pilão e taipa de mão, que foi concebido para servir de residência para a importante família Bourroul. A partir dos anos 30 passou a abrigar diversas atividades culturais e comerciais, até ser desapropriado e restaurado pela Prefeitura Municipal na década de 80. Desde então, vem sendo ocupado para atividades culturais. "
+    imagem: "imagens/Casarão_do_Carmo.png",
+    descricao: "O Casarão do Carmo é uma construção do século XIX, em estilo colonial, de taipa de pilão e taipa de mão, que foi concebido para servir de residência para a importante família Bourroul. A partir dos anos 30 passou a abrigar diversas atividades culturais e comerciais, até ser desapropriado e restaurado pela Prefeitura Municipal na década de 80. Desde então, vem sendo ocupado para atividades culturais."
   },
   {
     nome: "Pinacoteca de Mogi das Cruzes",
@@ -60,6 +66,7 @@ const PONTOS = [
     gratuito: true,
     nota: 4.6,
     horario: "Terça a sexta-feira, das 9h às 17h. Sábados, das 9h às 13h",
+    imagem: "imagens/Pinacoteca_de_Mogi_das_Cruzes.png",
     descricao: "A Pinacoteca tem 10 espaços expositivos internos e 1 espaço externo. O acervo é composto por 50 obras pertencentes à Prefeitura, as quais foram reunidas ao longo dos anos. Em exposição, são 161 obras de 128 artistas, selecionadas especificamente para o equipamento. Há, ainda, 80 obras na Reserva Técnica."
   },
   {
@@ -69,6 +76,7 @@ const PONTOS = [
     gratuito: true,
     nota: 4.6,
     horario: "Domingo, 09h às 17h",
+    imagem: "imagens/Casarão_do_Chá.png",
     descricao: "O Casarão do Chá foi construído pelo mestre-carpinteiro japonês Kazuo Hanaoka, no ano de 1942, para ser uma fábrica de chá. A edificação do casarão se fez necessária graças à bem sucedida produção de chá naquela área, que já vinha desde a década de 20."
   }
 ];
