@@ -18,7 +18,7 @@ A Secretaria recebe muitas vezes a mesma pergunta ("o que tem para visitar aqui?
 
 ## O que o site faz
 
-- Mostra os pontos turísticos em cartões, gerados pelo JavaScript a partir do array `PONTOS` (`dados.js`).
+- Mostra os pontos turísticos em cartões com imagem, gerados pelo JavaScript a partir do array `PONTOS` (`dados.js`).
 - Busca por nome enquanto a pessoa digita, sem diferenciar maiúscula de minúscula.
 - Filtro por categoria (Parque, Igreja, Museu e Mirante), com a opção "Todas" para voltar à lista completa.
 - Botão **"Somente gratuitos"** (diferencial do projeto), que pode ser ligado e desligado.
@@ -36,7 +36,7 @@ Busca, filtro de categoria e "Somente gratuitos" funcionam ao mesmo tempo.
 
 ## Como acrescentar um ponto turístico
 
-Abra o `dados.js` e acrescente um objeto no array `PONTOS`, com as propriedades `nome`, `categoria`, `bairro`, `gratuito`, `nota`, `horario` e `descricao`. O cartão novo aparece sozinho na tela, sem mexer no HTML. A categoria deve ser uma das quatro do filtro.
+Abra o `dados.js` e acrescente um objeto no array `PONTOS`, com as propriedades `nome`, `categoria`, `bairro`, `gratuito`, `nota`, `horario`, `imagem` e `descricao`. Guarde a imagem do ponto na pasta `imagens/` e escreva o caminho em `imagem` (por exemplo, `"imagens/Nome_do_ponto.png"`). O cartão novo aparece sozinho na tela, sem mexer no HTML. A categoria deve ser uma das quatro do filtro.
 
 ## Estrutura do repositório
 
@@ -46,6 +46,7 @@ style.css       aparência e layout (CSS puro, Flexbox e Grid)
 dados.js        somente o array de objetos PONTOS
 script.js       somente a lógica (busca, filtros, contador, detalhe)
 README.md       este arquivo
+imagens/        imagens dos pontos turísticos
 docs/
   requisitos.md   documento de requisitos (entrevista com a Secretaria)
   entidades.md    lista de entidades e atributos (rascunho do MER)
@@ -57,8 +58,8 @@ docs/
 |---|---|
 | João Vitor Vieira | **HTML:** escreveu o `index.html` com as tags semânticas (header, main, section, article, footer), os campos de busca e filtro com label e as áreas de contador, mensagem de vazio, detalhe e lista. |
 | Felipe França | **CSS:** escreveu o `style.css` com a paleta de cores, a tipografia, os cartões, o cabeçalho e o rodapé, o layout em Grid e Flexbox e o comportamento em tela pequena (400px). |
-| Henrique Moura | **JavaScript:** escreveu o `script.js`  |
-| Isabella Tiemi | **Documentação, JavaScript e dados:** fez a entrevista e escreveu o documento de requisitos e a lista de entidades e atributos (pasta `docs`), montou o array de 8 pontos turísticos no `dados.js`, mexeu no JavaScript com a renderização dos cartões a partir do array, a busca, o filtro de categoria, o botão "Somente gratuitos", o contador, o estado vazio e o detalhe do ponto. e escreveu este README. |
+| Henrique Moura | **JavaScript:** escreveu o `script.js` |
+| Isabella Tiemi | **Documentação, JavaScript e dados:** fez a entrevista e escreveu o documento de requisitos e a lista de entidades e atributos (pasta `docs`), montou o array de 8 pontos turísticos no `dados.js`, mexeu no JavaScript com a renderização dos cartões a partir do array, a busca, o filtro de categoria, o botão "Somente gratuitos", o contador, o estado vazio e o detalhe do ponto, e escreveu este README. |
 
 O Kanban do repositório, na aba **Projects** do GitHub, registra as tarefas de cada integrante ao longo da semana.
 
@@ -75,6 +76,8 @@ O detalhamento está em `docs/requisitos.md`.
 ## Fontes dos dados
 
 Os horários, as descrições e as notas dos pontos turísticos foram pesquisados em: https://www.mogidascruzes.sp.gov.br/pontos-turisticos/todos-os-assuntos. Os dados devem ser conferidos com a Secretaria de Turismo antes de uso real.
+
+As imagens da pasta `imagens/` foram obtidas em: [PREENCHER: fonte das imagens, com o link do site ou o nome do autor].
 
 ## Tecnologias
 
