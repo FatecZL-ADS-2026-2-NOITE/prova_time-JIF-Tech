@@ -2,8 +2,8 @@ const campoBusca = document.querySelector("#campo-busca");
 const filtroCategoria = document.querySelector("#filtro-categoria");
 const botaoGratuitos = document.querySelector("#btn-gratuitos");
 const contador = document.querySelector("#contador");
-const lista = document.querySelector("#lista-pontos");
-const mensagemVazia = document.querySelector("#mensagem-vazio");
+const lista = document.querySelector("#lista");
+const mensagemVazia = document.querySelector("#msg-vazia");
 const detalhe = document.querySelector("#detalhe");
 
 function somenteGratuitosLigado() {
@@ -24,14 +24,18 @@ function filtrarPontos() {
     return passaNaBusca && passaNaCategoria && passaNoGratuito;
   });
 }
+
 function criarCartao(ponto) {
   const cartao = document.createElement("article");
   cartao.className = "cartao";
   cartao.innerHTML =
-    "<h2>" + ponto.nome + "</h2>" +
-    "<p>" + ponto.categoria + " · " + ponto.bairro + "</p>" +
-    "<p>Nota: " + ponto.nota.toFixed(1) + "</p>" +
-    "<p>" + (ponto.gratuito ? "Gratuito" : "Pago") + "</p>";
+    '<img class="cartao-img" src="' + ponto.imagem + '" alt="' + ponto.nome + '" loading="lazy">' +
+    '<div class="cartao-conteudo">' +
+      '<h2>' + ponto.nome + '</h2>' +
+      '<p>' + ponto.categoria + ' · ' + ponto.bairro + '</p>' +
+      '<p>Nota: ' + ponto.nota.toFixed(1) + '</p>' +
+      '<p>' + (ponto.gratuito ? "Gratuito" : "Pago") + '</p>' +
+    '</div>';
 
   cartao.addEventListener("click", function () {
     mostrarDetalhe(ponto);
@@ -42,14 +46,15 @@ function criarCartao(ponto) {
 
 function mostrarDetalhe(ponto) {
   detalhe.innerHTML =
-    "<h2>" + ponto.nome + "</h2>" +
-    "<p><strong>Categoria:</strong> " + ponto.categoria + "</p>" +
-    "<p><strong>Bairro:</strong> " + ponto.bairro + "</p>" +
-    "<p><strong>Entrada:</strong> " + (ponto.gratuito ? "Gratuita" : "Paga") + "</p>" +
-    "<p><strong>Nota:</strong> " + ponto.nota.toFixed(1) + "</p>" +
-    "<p><strong>Horário:</strong> " + ponto.horario + "</p>" +
-    "<p>" + ponto.descricao + "</p>" +
-    "<button id=\"btn-voltar\" type=\"button\">Voltar para a lista</button>";
+    '<img class="detalhe-img" src="' + ponto.imagem + '" alt="' + ponto.nome + '">' +
+    '<h2>' + ponto.nome + '</h2>' +
+    '<p><strong>Categoria:</strong> ' + ponto.categoria + '</p>' +
+    '<p><strong>Bairro:</strong> ' + ponto.bairro + '</p>' +
+    '<p><strong>Entrada:</strong> ' + (ponto.gratuito ? "Gratuita" : "Paga") + '</p>' +
+    '<p><strong>Nota:</strong> ' + ponto.nota.toFixed(1) + '</p>' +
+    '<p><strong>Horário:</strong> ' + ponto.horario + '</p>' +
+    '<p>' + ponto.descricao + '</p>' +
+    '<button id="btn-voltar" type="button">Voltar para a lista</button>';
 
   document.querySelector("#btn-voltar").addEventListener("click", fecharDetalhe);
 
@@ -80,11 +85,14 @@ function atualizarTela() {
 
   mensagemVazia.hidden = pontos.length !== 0;
 }
+
 campoBusca.addEventListener("input", atualizarTela);
 filtroCategoria.addEventListener("change", atualizarTela);
+
 botaoGratuitos.addEventListener("click", function () {
   botaoGratuitos.classList.toggle("ativo");
   botaoGratuitos.setAttribute("aria-pressed", somenteGratuitosLigado());
   atualizarTela();
 });
+
 atualizarTela();
