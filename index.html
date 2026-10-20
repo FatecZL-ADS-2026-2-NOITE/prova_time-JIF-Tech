@@ -15,41 +15,41 @@
     </header>
 
     <main>
-    <section aria-label="Busca e filtros">
-    <div>
-        <label id="lbl-busca" for="campo-busca">Buscar por nome</label>
-        <input type="search" id="campo-busca" name="busca" placeholder="Ex.: Parque da cidade" autocomplete="off">
-    </div>
+        <section aria-label="Busca e filtros">
+            <div>
+                <label id="lbl-busca" for="campo-busca">Buscar por nome</label>
+                <input type="search" id="campo-busca" name="busca" placeholder="Ex.: Parque da cidade" autocomplete="off">
+            </div>
 
-    <div>
-        <label for="filtro-categoria">Categoria</label>
-        <select id="filtro-categoria" name="categoria">
-        <option value="Todas">Todas</option>
-        <option value="Parque">Parque</option>
-        <option value="Igreja">Igreja</option>
-        <option value="Museu">Museu</option>
-        <option value="Mirante">Mirante</option>
-        </select>
-    </div>
+            <div>
+                <label for="filtro-categoria">Categoria</label>
+                <select id="filtro-categoria" name="categoria">
+                    <option value="Todas">Todas</option>
+                    <option value="Parque">Parque</option>
+                    <option value="Igreja">Igreja</option>
+                    <option value="Museu">Museu</option>
+                    <option value="Mirante">Mirante</option>
+                </select>
+            </div>
 
-        <button type="button" id="btn-gratuitos" aria-pressed="false">Somente gratuitos</button>
-    </section>
+            <button type="button" id="btn-gratuitos" aria-pressed="false">Somente gratuitos</button>
+        </section>
 
-    <section aria-label="Resultados">
-        <section id="detalhe" aria-label="Detalhe do ponto" hidden></section>
-        <p id="contador" aria-live="polite"></p>
-        <p id="msg-vazia" hidden>Nenhum ponto turístico encontrado. Tente outro nome ou mude os filtros.</p>
-    <div id="lista"></div>
-    </section>
-</main>
+        <section aria-label="Resultados">
+            <section id="detalhe" aria-label="Detalhe do ponto" hidden></section>
+            <p id="contador" aria-live="polite"></p>
+            <p id="msg-vazia" hidden>Nenhum ponto turístico encontrado. Tente outro nome ou mude os filtros.</p>
+            <div id="lista"></div>
+        </section>
+    </main>
 
-<footer>
-    <p>Time JIF Tech</p>
-    <p>Felipe França, Henrique Moura, Isabella Tiemi e João Vitor Vieira</p>
-</footer>
+    <footer>
+        <p>Time JIF Tech</p>
+        <p>Felipe França, Henrique Moura, Isabella Tiemi e João Vitor Vieira</p>
+    </footer>
 
-<script src="dados.js"></script>
-<script src="script.js"></script>
+    <script src="dados.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
