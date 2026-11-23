@@ -1,3 +1,5 @@
+Link do Google Docs: https://docs.google.com/document/d/1Ut9DpwHn3z9C7WzDn2pTbHlPXIBTdKAZv8SlVC_zpjU/edit?tab=t.0
+
 # Guia de Pontos Turísticos de Mogi das Cruzes
 
 Projeto Desafio 01 (Vitrine Interativa) · Projeto Integrador · Fatec Zona Leste · Análise e Desenvolvimento de Sistemas
